@@ -5,7 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
-import com.example.worksuite.databinding.ItemShiftBinding
+import com.example.erpproject.databinding.ItemShiftBinding
 
 class ShiftAdapter(private val shifts: List<Shift>) :
     RecyclerView.Adapter<ShiftAdapter.ShiftViewHolder>() {

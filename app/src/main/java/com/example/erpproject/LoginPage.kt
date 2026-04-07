@@ -2,8 +2,8 @@ package com.example.erpproject
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.worksuite.databinding.ActivityLoginBinding
-import com.example.worksuite.databinding.ItemDemoCredentialBinding
+import com.example.erpproject.databinding.ActivityLoginBinding
+import com.example.erpproject.databinding.ItemDemoCredentialBinding
 
 class LoginPage : AppCompatActivity() {
 
@@ -19,7 +19,9 @@ class LoginPage : AppCompatActivity() {
         setupDemoCredentials()
 
         binding.loginButton.setOnClickListener {
-            // handle login
+            // Navigate to Dashboard
+            val intent = android.content.Intent(this, DashboardActivity::class.java)
+            startActivity(intent)
         }
     }
 
@@ -28,15 +30,27 @@ class LoginPage : AppCompatActivity() {
         binding.demoAdmin.roleText.text = "Admin"
         binding.demoAdmin.emailText.text = "admin@example.com"
         binding.demoAdmin.passwordText.text = "123456"
+        binding.demoAdmin.root.setOnClickListener {
+            binding.emailEditText.setText("admin@example.com")
+            binding.passwordEditText.setText("123456")
+        }
 
         // Setup Employee credentials
         binding.demoEmployee.roleText.text = "Employee"
         binding.demoEmployee.emailText.text = "employee@example.com"
         binding.demoEmployee.passwordText.text = "123456"
+        binding.demoEmployee.root.setOnClickListener {
+            binding.emailEditText.setText("employee@example.com")
+            binding.passwordEditText.setText("123456")
+        }
 
         // Setup Client credentials
         binding.demoClient.roleText.text = "Client"
         binding.demoClient.emailText.text = "client@example.com"
         binding.demoClient.passwordText.text = "123456"
+        binding.demoClient.root.setOnClickListener {
+            binding.emailEditText.setText("client@example.com")
+            binding.passwordEditText.setText("123456")
+        }
     }
 }

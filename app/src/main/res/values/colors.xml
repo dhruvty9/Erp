@@ -2,4 +2,15 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <!-- Existing colors... -->
+
+    <color name="shift_day_bg">#FFF9C4</color> <!-- Light Yellow -->
+    <color name="shift_night_bg">#C5CAE9</color> <!-- Light Indigo -->
+    <color name="bg_light_gray">#F5F5F5</color>
+    <color name="logo_yellow">#FFD600</color>
+    <color name="dark_gray">#424242</color>
+    <color name="primary_blue">#1976D2</color>
+    <color name="border_light">#E0E0E0</color>
+    <color name="shift_day_text">#15803D</color>
+    <color name="shift_night_text">#4338CA</color>
 </resources>

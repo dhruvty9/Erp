@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.worksuite.databinding.DashboardBinding
+import com.example.erpproject.databinding.DashboardBinding
 import kotlin.jvm.java
 
 class DashboardActivity : AppCompatActivity() {

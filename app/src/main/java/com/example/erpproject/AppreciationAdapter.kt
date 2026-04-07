@@ -4,7 +4,7 @@ import android.content.res.ColorStateList
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.worksuite.databinding.ItemAppreciationBinding
+import com.example.erpproject.databinding.ItemAppreciationBinding
 
 class AppreciationAdapter(private val items: List<Appreciation>) :
     RecyclerView.Adapter<AppreciationAdapter.ViewHolder>() {

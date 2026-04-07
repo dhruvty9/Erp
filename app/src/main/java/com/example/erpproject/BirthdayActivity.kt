@@ -2,7 +2,7 @@ package com.example.erpproject
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.worksuite.databinding.ActivityBirthdayBinding
+import com.example.erpproject.databinding.ActivityBirthdayBinding
 
 class BirthdayActivity : AppCompatActivity() {
 
