@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bg_light_gray"
@@ -16,7 +17,7 @@
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:orientation="vertical"
-            android:padding="16.dp">
+            android:padding="16dp">
 
             <!-- Header Section -->
             <LinearLayout
@@ -170,8 +171,6 @@
                         android:textSize="16sp"
                         android:textStyle="bold"
                         app:cornerRadius="6dp"
-                        app:icon="@drawable/ic_arrow_right"
-                        app:iconGravity="textEnd"
                         app:iconTint="@color/white" />
 
                     <Space
@@ -201,16 +200,19 @@
                         android:layout_width="match_parent"
                         android:layout_height="16dp" />
 
-                    <!-- Demo Account Table (Simplified for brevity) -->
+                    <!-- Demo Account Table -->
                     <include
                         android:id="@+id/demo_admin"
-                        layout="@layout/item_demo_credential" />
+                        layout="@layout/item_demo_credential"
+                        bind:layout="@layout/item_demo_credential" />
                     <include
                         android:id="@+id/demo_employee"
-                        layout="@layout/item_demo_credential" />
+                        layout="@layout/item_demo_credential"
+                        bind:layout="@layout/item_demo_credential" />
                     <include
                         android:id="@+id/demo_client"
-                        layout="@layout/item_demo_credential" />
+                        layout="@layout/item_demo_credential"
+                        bind:layout="@layout/item_demo_credential" />
 
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>

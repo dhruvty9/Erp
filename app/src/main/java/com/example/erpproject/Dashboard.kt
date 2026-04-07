@@ -80,5 +80,21 @@ class DashboardActivity : AppCompatActivity() {
         binding.cardJoinings.setOnClickListener {
             Toast.makeText(this, "Viewing Joinings & Anniversaries", Toast.LENGTH_SHORT).show()
         }
+
+        binding.cardNoticePeriod.setOnClickListener {
+            Toast.makeText(this, "Notice Period Duration", Toast.LENGTH_SHORT).show()
+        }
+
+        binding.cardProbationDate.setOnClickListener {
+            Toast.makeText(this, "Probation Date Details", Toast.LENGTH_SHORT).show()
+        }
+
+        binding.cardInternshipDate.setOnClickListener {
+            Toast.makeText(this, "Internship Date Details", Toast.LENGTH_SHORT).show()
+        }
+
+        binding.cardContractDate.setOnClickListener {
+            Toast.makeText(this, "Contract Date Details", Toast.LENGTH_SHORT).show()
+        }
     }
 }
